@@ -72,8 +72,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-![Transaction id](transaction.png)
-
-
-
-![frontend preview](image.png)
+![Transaction id](assets/transaction.png)
+![frontend preview](assets/image.png)
