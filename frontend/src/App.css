@@ -1,0 +1,40 @@
+/* Dark Academia Theme - Application Level Styles */
+
+.App {
+  min-height: 100vh;
+  background-color: #121212;
+  color: #e8e4dc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+.button-primary {
+  @apply bg-accent-gold text-dark-bg font-semibold px-5 py-2 rounded-md border border-accent-gold hover:bg-opacity-90 transition;
+}
+
+.card-soft {
+  @apply bg-dark-panel border border-dark-border rounded-lg shadow-soft p-6;
+}
+
+.section-title {
+  @apply font-playfair text-2xl text-text-primary mb-4 border-b border-dark-border pb-2;
+}
+
+.subtle-text {
+  @apply text-text-secondary font-inter;
+}
+
+.shadow-glow {
+  box-shadow: 0 0 12px rgba(184, 155, 94, 0.2);
+}
+
+.bg-vault {
+  background: radial-gradient(circle at top left, rgba(184, 155, 94, 0.12), transparent 45%), linear-gradient(180deg, #121212 0%, #0f0f0f 100%);
+}
+

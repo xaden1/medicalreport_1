@@ -1,0 +1,285 @@
+.research-marketplace {
+  width: 100%;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.marketplace-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.btn-refresh {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #FDE8D7 0%, #D96C7A 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.btn-refresh:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(230, 126, 141, 0.4);
+}
+
+.studies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.study-item {
+  padding: 15px;
+  background: #f9f9f9;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.study-item:hover {
+  border-color: #D96C7A;
+  background: #f5f5ff;
+  transform: translateX(4px);
+}
+
+.study-item h4 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.institution {
+  margin: 0 0 10px 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.study-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.participants {
+  color: #E67E8D;
+  font-weight: 600;
+}
+
+.status {
+  background: #d4edda;
+  color: #155724;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.study-details-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.study-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.description {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.study-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 6px;
+}
+
+.label {
+  font-weight: 600;
+  color: #555;
+}
+
+.data-types {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.data-types li {
+  background: linear-gradient(135deg, #E67E8D15 0%, #D96C7A15 100%);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: #E67E8D;
+}
+
+.consent-section {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 15px;
+}
+
+.consent-section h4 {
+  margin-top: 0;
+  color: #333;
+}
+
+.consent-section p {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 8px 0;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #E67E8D;
+}
+
+.btn-consent {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #FDE8D7 0%, #D96C7A 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-consent:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(230, 126, 141, 0.4);
+}
+
+.search-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-section input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.search-section button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #FDE8D7 0%, #D96C7A 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.consents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.consent-item {
+  padding: 12px;
+  background: #f9f9f9;
+  border-left: 4px solid #E67E8D;
+  border-radius: 6px;
+}
+
+.consent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.study-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.privacy-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.privacy-badge.anonymized {
+  background: #d4edda;
+  color: #155724;
+}
+
+.privacy-badge.identified {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.consent-date {
+  margin: 0;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.empty-state {
+  text-align: center;
+  color: #999;
+  padding: 20px;
+  margin: 0;
+}

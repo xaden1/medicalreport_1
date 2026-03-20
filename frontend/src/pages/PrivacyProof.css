@@ -1,0 +1,392 @@
+.privacy-proof {
+  width: 100%;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.description {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+/* Generate Proof Card */
+.generate-card form div {
+  margin-bottom: 15px;
+}
+
+.generate-card label {
+  display: block;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.generate-card input,
+.generate-card select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.generate-card input:focus,
+.generate-card select:focus {
+  outline: none;
+  border-color: #E67E8D;
+  box-shadow: 0 0 0 3px rgba(230, 126, 141, 0.1);
+}
+
+.generate-card button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #FDE8D7 0%, #D96C7A 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.generate-card button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(230, 126, 141, 0.4);
+}
+
+/* Proof Generated Card */
+.proof-generated-card {
+  background: linear-gradient(135deg, #FDF3F1 0%, #FFF5F7 100%);
+  border: 2px solid #E67E8D40;
+}
+
+.proof-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.proof-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+}
+
+.proof-type {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.validity-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.validity-badge.valid {
+  background: #d4edda;
+  color: #155724;
+}
+
+.validity-badge.expired {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.proof-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.label {
+  font-weight: 600;
+  color: #555;
+}
+
+.proof-id {
+  font-family: monospace;
+  color: #E67E8D;
+  word-break: break-all;
+}
+
+.status-proven {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.share-section {
+  border-top: 1px solid #E67E8D30;
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+.share-section p {
+  margin: 0 0 10px 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.copy-section {
+  display: flex;
+  gap: 8px;
+}
+
+.copy-section input {
+  flex: 1;
+  padding: 10px 12px;
+  background: white;
+  border: 2px solid #E67E8D;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #E67E8D;
+}
+
+.copy-section button {
+  padding: 10px 14px;
+  background: linear-gradient(135deg, #FDE8D7 0%, #D96C7A 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.copy-section button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(230, 126, 141, 0.3);
+}
+
+/* My Proofs Card */
+.my-proofs-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-section input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.search-section button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #FDE8D7 0%, #D96C7A 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-section button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(230, 126, 141, 0.3);
+}
+
+.proofs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.proof-tile {
+  padding: 15px;
+  background: linear-gradient(135deg, #FDF3F1 0%, #FFF5F7 100%);
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.proof-tile:hover {
+  border-color: #E67E8D;
+  box-shadow: 0 4px 12px rgba(230, 126, 141, 0.2);
+  transform: translateY(-2px);
+}
+
+.proof-tile-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.proof-icon {
+  font-size: 1.5rem;
+}
+
+.proof-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.expiry-indicator {
+  margin-bottom: 8px;
+}
+
+.expiry-indicator .valid {
+  color: #28a745;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.expiry-indicator .expired {
+  color: #dc3545;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.proof-date {
+  margin: 0;
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.empty-state {
+  text-align: center;
+  color: #999;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Verify Card */
+.verify-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.verify-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.verify-section input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.verify-section button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #FDE8D7 0%, #D96C7A 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.verify-section button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(230, 126, 141, 0.3);
+}
+
+.verification-result {
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.verification-result.valid {
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+.verification-result.invalid {
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+}
+
+.result-header {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.result-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  padding: 8px 0;
+  border-bottom: 1px solid currentColor;
+  opacity: 0.8;
+}
+
+.result-row:last-child {
+  border-bottom: none;
+}
+
+.result-row code {
+  font-family: monospace;
+  word-break: break-all;
+  opacity: 1;
+}

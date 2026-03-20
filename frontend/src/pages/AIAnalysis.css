@@ -1,0 +1,150 @@
+.ai-analysis {
+  width: 100%;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.upload-section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.file-input-wrapper {
+  margin-bottom: 15px;
+}
+
+.file-input-wrapper input {
+  width: 100%;
+  padding: 12px;
+  border: 2px dashed #E67E8D;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.file-input-wrapper input:focus {
+  outline: none;
+  border-color: #D96C7A;
+  background: rgba(230, 126, 141, 0.05);
+}
+
+.file-name {
+  margin-top: 10px;
+  color: #E67E8D;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.upload-section button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #FDE8D7 0%, #D96C7A 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-section button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(230, 126, 141, 0.4);
+}
+
+.analysis-results {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.result-item h3 {
+  margin-top: 0;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.analysis-card {
+  background: linear-gradient(135deg, #E67E8D15 0%, #D96C7A15 100%);
+  border-left: 4px solid #E67E8D;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.analysis-card h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.analysis-card p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.highlight {
+  color: #D96C7A;
+}
+
+.severity-low {
+  color: #28a745;
+}
+
+.severity-medium {
+  color: #fd7e14;
+}
+
+.severity-high {
+  color: #dc3545;
+}
+
+.confidence {
+  color: #E67E8D;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.section h4 {
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.findings-list,
+.recommendations-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.findings-list li,
+.recommendations-list li {
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  background: #f9f9f9;
+  border-left: 3px solid #E67E8D;
+  border-radius: 4px;
+}
+
+.findings-list li:before,
+.recommendations-list li:before {
+  content: '✓ ';
+  color: #E67E8D;
+  font-weight: bold;
+  margin-right: 8px;
+}
