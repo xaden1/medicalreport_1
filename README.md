@@ -74,4 +74,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ![Transaction id](assets/transaction.png)
 ![frontend preview](assets/image.png)
-![frontend preview](https://github.com/xaden1/medicalreport_1/blob/main/assets/image.png)
