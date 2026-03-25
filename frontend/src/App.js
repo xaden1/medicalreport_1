@@ -17,6 +17,9 @@ function App() {
   const [walletAddress, setWalletAddress] = useState('');
   const [network] = useState('Stellar Testnet');
   const [userRole, setUserRole] = useState('Doctor');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   const handleConnectWallet = async () => {
     try {
@@ -41,9 +44,10 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-dark-bg text-text-primary">
-        <Sidebar />
-        <div className="ml-64">
+        <Sidebar isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />
+        <div className="md:ml-64 transition-all duration-300">
           <Navbar
+            toggleMenu={toggleMobileMenu}
             walletConnected={walletConnected}
             walletAddress={walletAddress}
             network={network}

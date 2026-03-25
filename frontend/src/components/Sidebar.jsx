@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, onClose }) => {
   const location = useLocation();
   
   const navItems = [
@@ -15,8 +15,17 @@ const Sidebar = () => {
   ];
 
   return (
-    <aside className="w-64 bg-dark-panel border-r border-dark-border min-h-screen p-6 fixed left-0 top-0">
-      {/* Logo */}
+    <>
+      {/* Mobile overlay */}
+      {isOpen && (
+        <div className="fixed inset-0 bg-black/50 z-40 md:hidden" onClick={onClose} />
+      )}
+      <aside className={`
+        fixed left-0 top-0 z-50 w-64 bg-dark-panel border-r border-dark-border min-h-screen p-6
+        transition-transform duration-300 ease-in-out md:translate-x-0
+        ${isOpen ? 'translate-x-0' : '-translate-x-full'}
+      `}>
+        {/* Logo */}
       <div className="mb-12">
         <h1 className="font-playfair text-2xl text-accent-gold mb-2">
           MedProof
@@ -64,6 +73,7 @@ const Sidebar = () => {
         </div>
       </div>
     </aside>
+    </>
   );
 };
 

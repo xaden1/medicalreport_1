@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import WalletStatus from './WalletStatus';
 
-const Navbar = ({ walletConnected, walletAddress, network, userRole, onConnect, onDisconnect }) => {
+const Navbar = ({ toggleMenu, walletConnected, walletAddress, network, userRole, onConnect, onDisconnect }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const formatAddress = (addr) => {
@@ -10,18 +10,21 @@ const Navbar = ({ walletConnected, walletAddress, network, userRole, onConnect, 
   };
 
   return (
-    <nav className="fixed top-0 left-64 right-0 bg-dark-panel border-b border-dark-border h-16 flex items-center justify-between px-8 z-40">
+    <nav className="fixed top-0 left-0 md:left-64 right-0 bg-dark-panel border-b border-dark-border h-16 flex items-center justify-between px-4 sm:px-8 z-30">
       {/* Left Section - Title */}
-      <div className="flex items-center gap-4">
-        <h2 className="font-playfair text-lg text-text-primary">
+      <div className="flex items-center gap-2 sm:gap-4">
+        <button className="md:hidden text-text-primary text-xl" onClick={toggleMenu}>
+          ☰
+        </button>
+        <h2 className="hidden sm:block font-playfair sm:text-lg text-text-primary text-sm whitespace-nowrap">
           Medical Record System
         </h2>
       </div>
 
       {/* Right Section - Wallet & Status */}
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-2 sm:gap-6">
         {/* Network Status */}
-        <div className="flex items-center gap-2 px-4 py-2 rounded-md bg-dark-hover border border-dark-border">
+        <div className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-md bg-dark-hover border border-dark-border">
           <span className="w-2 h-2 rounded-full bg-accent-gold"></span>
           <span className="text-xs text-text-secondary font-inter">
             {network || 'Stellar Testnet'}
