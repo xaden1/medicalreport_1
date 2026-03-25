@@ -39,3 +39,8 @@ A decentralized, privacy-first medical record management system designed for the
 2. Run `npm install` in the `/frontend` directory
 3. Launch via `npm start`
 4. Deploy local contracts according to `contracts` documentation (if running local RPC).
+
+### Preview
+![Transaction id] <img width="715" height="716" alt="image" src="https://github.com/user-attachments/assets/5f430f4d-9854-4972-929e-99148a25650c" />
+
+![frontend preview] <img width="1628" height="760" alt="image" src="https://github.com/user-attachments/assets/a5480f15-fb47-4497-a696-3a47a8a6085f" />
