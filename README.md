@@ -8,7 +8,8 @@ A decentralized, privacy-first medical record management system designed for the
 
 ## 📱 Mobile Responsive View
 
-![Mobile Responsive UI](assets/image.png)
+![Mobile Responsive UI] <img width="346" height="715" alt="image" src="https://github.com/user-attachments/assets/362da4f8-f2e4-46a7-84be-aa0c904f195d" />
+
 
 ## ⚙️ CI/CD Pipeline
 
